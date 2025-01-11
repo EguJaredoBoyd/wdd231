@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Egu Chidiebere Jared- Web Development</title>
+  <meta name="description" content="Egu Chidiebere Jared's portfolio showcasing coursework, certificates, and profile links for web development projects.">
+  <meta name="author" content="Egu Chidiebere Jared">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
-    <p>Egu Chidiebere Jared</p>
+  
+  <header class="header">
+    <img src="images/MyPhoto.jpg" alt="Egu Chidiebere Jared Profile" class="profile-pic">
+    <h1 class="name">Egu Chidiebere Jared</h1>
+    <nav class="navigation">
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#" class="active" target="_blank">Chamber</a></li>
+        <li><a href="https://github.com/EguJaredoBoyd" class="active" target="_blank">GitHub Profile</a></li>
+        <li><a href="https://www.linkedin.com/in/egu-chidiebere-jared-021b18331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="active" target="_blank">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <main>
+    
+    <section class="coursework">
+      <h2>Course Work</h2>
+      
+      
+      <div class="filters">
+        <button id="filter-all" class="filter-btn" data-filter="all">All</button>
+        <button id="filter-cse" class="filter-btn" data-filter="CSE">CSE</button>
+        <button id="filter-wdd" class="filter-btn" data-filter="WDD">WDD</button>
+      </div>
+
+      
+      <div id="courses-container"></div>
+
+      
+      <div id="total-credits">Total Credits: 0</div>
+    </section>
+
+    
+    <section class="location">
+      <h2>Lagos, Nigeria</h2>
+      <img src="images/cityLagos.webp" alt="A City in Lagos" class="location-image">
+      <p class="caption">Ocean City, Lagos.</p>
+    </section>
+
+    
+    <section class="certificate">
+      <h2>Web and Computer Programming Certificate</h2>
+      <div class="filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="CSE">CSE</button>
+        <button class="filter-btn" data-filter="WDD">WDD</button>
+      </div>
+      <div id="courses-container">
+        
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="footer">
+    <p>
+      &copy; <span id="currentyear"></span> Egu Chidiebere Jared · Nigeria
+    </p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
