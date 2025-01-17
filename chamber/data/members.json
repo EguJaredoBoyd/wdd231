@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Alpha Solutions",
+        "address": "123 Alpha St, Townsville",
+        "phone": "555-1234",
+        "website": "https://alpha.com",
+        "image": "images/alpha.png",
+        "membership": 1
+    },
+    {
+        "name": "Beta Builders",
+        "address": "456 Beta Rd, Cityville",
+        "phone": "555-5678",
+        "website": "https://beta.com",
+        "image": "images/beta.png",
+        "membership": 2
+    },
+    {
+        "name": "Gamma Services",
+        "address": "789 Gamma Blvd, Metropolis",
+        "phone": "555-9101",
+        "website": "https://gamma.com",
+        "image": "images/Gamma.jpg",
+        "membership": 3
+    },
+    {
+        "name": "Delta Innovations",
+        "address": "321 Delta Ave, Springfield",
+        "phone": "555-1212",
+        "website": "https://delta.com",
+        "image": "images/delta.png",
+        "membership": 4
+    },
+    {
+        "name": "Epsilon Enterprises",
+        "address": "654 Epsilon Ln, Rivertown",
+        "phone": "555-3434",
+        "website": "https://epsilon.com",
+        "image": "images/Epsilon.jpg",
+        "membership": 5
+    },
+    {
+        "name": "Zeta Solutions",
+        "address": "987 Zeta Dr, Hillview",
+        "phone": "555-5656",
+        "website": "https://zeta.com",
+        "image": "images/zeta.png",
+        "membership": 6
+    },
+    {
+        "name": "Eta Tech",
+        "address": "432 Eta St, Lakeside",
+        "phone": "555-7878",
+        "website": "https://eta.com",
+        "image": "images/eta.png",
+        "membership": 7
+    },
+    {
+        "name": "Theta Consulting",
+        "address": "876 Theta Blvd, Mountaintown",
+        "phone": "555-9090",
+        "website": "https://theta.com",
+        "image": "images/Thetha.png",
+        "membership": 8
+    }
+  ]
+  
