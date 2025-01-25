@@ -5,6 +5,7 @@ async function loadMembers() {
 
     const members = await response.json();
 
+
     const filteredMembers = members.slice(-3);
 
     const container = document.getElementById("member-container");
@@ -35,6 +36,29 @@ async function loadMembers() {
   }
 }
 
+async function loadWeather() {
+  const apiKey = "504d565dc0a32788d6cf04fdab807406"; 
+  const city = "New York"; 
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+  try {
+    const response = await fetch(apiUrl);
+    if (!response.ok) throw new Error("Weather data not found");
+
+    const weatherData = await response.json();
+
+    const weatherInfo = document.getElementById("weather-info");
+    weatherInfo.innerHTML = `
+      <p>City: ${city}</p>
+      <p>Temperature: ${weatherData.main.temp}°C</p>
+      <p>Condition: ${weatherData.weather[0].description}</p>
+    `;
+  } catch (error) {
+    console.error("Error fetching weather data:", error);
+    document.getElementById("weather-info").innerHTML = `<p>Unable to fetch weather data.</p>`;
+  }
+}
+
 function updateFooter() {
   document.getElementById("year").textContent = new Date().getFullYear();
   document.getElementById("last-modified").textContent = document.lastModified;
@@ -42,5 +66,6 @@ function updateFooter() {
 
 document.addEventListener("DOMContentLoaded", () => {
   loadMembers();
+  loadWeather();
   updateFooter();
 });
