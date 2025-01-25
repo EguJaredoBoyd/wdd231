@@ -1,38 +1,43 @@
-
 async function loadMembers() {
-  const response = await fetch("data/members.json");
-  const members = await response.json();
-  const container = document.getElementById("member-container");
-  container.innerHTML = "";
+  try {
+    const response = await fetch("data/members.json");
+    if (!response.ok) throw new Error("Member data not found");
 
-  members.forEach(member => {
+    const members = await response.json();
+
+    const filteredMembers = members.slice(-3);
+
+    const container = document.getElementById("member-container");
+    container.innerHTML = "";
+
+    if (filteredMembers.length === 0) {
+      container.innerHTML = "<p>No members to display.</p>";
+      return;
+    }
+
+    filteredMembers.forEach(member => {
       const card = document.createElement("div");
       card.className = "member-card";
       card.innerHTML = `
-          <img src="${member.image}" alt="${member.name}">
-          <h3>${member.name}</h3>
-          <p>${member.address}</p>
-          <p>${member.phone}</p>
-          <a href="${member.website}" target="_blank">Visit Website</a>
+        <img src="${member.logo || 'images/placeholder-logo.png'}" 
+             alt="${member.name}" 
+             onerror="this.src='images/placeholder-logo.png';">
+        <h3>${member.name}</h3>
+        <p>${member.address}</p>
+        <p>${member.phone}</p>
+        <a href="${member.website}" target="_blank">Visit Website</a>
       `;
       container.appendChild(card);
-  });
-}
-
-function toggleView(view) {
-  const container = document.getElementById("member-container");
-  if (view === "grid") {
-      container.classList.remove("list-view");
-  } else if (view === "list") {
-      container.classList.add("list-view");
+    });
+  } catch (error) {
+    console.error("Error loading members:", error);
+    document.getElementById("member-container").innerHTML = `<p>Unable to load member data.</p>`;
   }
 }
 
 function updateFooter() {
-  const yearSpan = document.getElementById("year");
-  const modifiedSpan = document.getElementById("last-modified");
-  yearSpan.textContent = new Date().getFullYear();
-  modifiedSpan.textContent = document.lastModified;
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("last-modified").textContent = document.lastModified;
 }
 
 document.addEventListener("DOMContentLoaded", () => {

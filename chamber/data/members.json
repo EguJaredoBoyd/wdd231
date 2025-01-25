@@ -20,7 +20,7 @@
         "address": "789 Gamma Blvd, Metropolis",
         "phone": "555-9101",
         "website": "https://gamma.com",
-        "image": "images/Gamma.jpg",
+        "image": "images/gamma.jpg",
         "membership": 3
     },
     {
@@ -36,7 +36,7 @@
         "address": "654 Epsilon Ln, Rivertown",
         "phone": "555-3434",
         "website": "https://epsilon.com",
-        "image": "images/Epsilon.jpg",
+        "image": "images/epsilon.jpg",
         "membership": 5
     },
     {
@@ -60,8 +60,33 @@
         "address": "876 Theta Blvd, Mountaintown",
         "phone": "555-9090",
         "website": "https://theta.com",
-        "image": "images/Thetha.png",
+        "image": "images/theta.png",
         "membership": 8
+    },
+    
+    {
+        "name": "Gold Member 1",
+        "logo": "logo/goldmember.jpg",
+        "phone": "123-456-7890",
+        "address": "123 Main St",
+        "website": "https://example1.com",
+        "level": "Gold"
+    },
+    {
+        "name": "Silver Member 2",
+        "logo": "logo/silverImage.jpeg",
+        "phone": "987-654-3210",
+        "address": "456 Elm St",
+        "website": "https://example2.com",
+        "level": "Silver"
+    },
+    {
+        "name": "Gold Member 3",
+        "logo": "logo/goldmember2.jpg",
+        "phone": "555-123-4567",
+        "address": "789 Oak St",
+        "website": "https://example3.com",
+        "level": "Gold"
+
     }
-  ]
-  
+]
