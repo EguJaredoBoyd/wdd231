@@ -1,28 +1,26 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     const visitMessage = document.getElementById("visit-message");
 
-    // Get the last visit timestamp from localStorage
     let lastVisit = localStorage.getItem("lastVisit");
     let message = "";
 
     if (!lastVisit) {
-        message = "Welcome! Let us know if you have any questions.";
+        message = "Welcome! This is your first visit.";
     } else {
-        let lastVisitDate = new Date(parseInt(lastVisit));
-        let currentDate = new Date();
-        let timeDiff = currentDate - lastVisitDate;
-        let daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        const lastVisitDate = new Date(lastVisit);
+        const today = new Date();
+        const timeDiff = today - lastVisitDate;
+        const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
-        if (daysDiff < 1) {
-            message = "Back so soon! Awesome!";
+        if (daysDiff === 0) {
+            message = "Welcome back! You visited today.";
+        } else if (daysDiff === 1) {
+            message = "Welcome back! Your last visit was yesterday.";
         } else {
-            message = `You last visited ${daysDiff} ${daysDiff === 1 ? "day" : "days"} ago.`;
+            message = `Welcome back! Your last visit was ${daysDiff} days ago.`;
         }
     }
 
-    // Update the message
     visitMessage.textContent = message;
-
-    // Save the current date as last visit
-    localStorage.setItem("lastVisit", Date.now());
+    localStorage.setItem("lastVisit", new Date().toISOString());
 });

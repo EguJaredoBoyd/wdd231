@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Local Museum",
+        "image": "./images/musuemLondon.webp",
+        "address": "150 London Wall, City of London, London",
+        "description": "Explore the rich history of our town with exhibits from past centuries.",
+        "link": "https://www.londonmuseum.org.uk/spaces/"
+    },
+    {
+        "name": "City Park",
+        "image": "./images/usaPark.jpg",
+        "address": "456 Greenway, North along Main Street, Carbon County",
+        "description": "A beautiful park with trails, picnic spots, and a lake.",
+        "link": "https://en.wikipedia.org/wiki/Helper,_Utah"
+    },
+    {
+        "name": "Historic Theater",
+        "image": "./images/newark1960.webp",
+        "address": "Downtown Newark, Paramount, New Jersey",
+        "description": "Watch live performances in a beautifully restored vintage theater.",
+        "link": "https://commons.wikimedia.org/wiki/File:The_Newark_Theatre_in_1906.webp"
+    },
+    {
+        "name": "Farmers Market",
+        "image": "./images/farmerMarket.webp",
+        "address": "Market Square, Ashland Ave, Chicago",
+        "description": "Fresh produce, handmade crafts, and local food vendors every weekend.",
+        "link": "https://www.swap-o-rama.com/blog/2018/04/10/farmers-market-shopping-tips/"
+    },
+    {
+        "name": "Public Library",
+        "image": "./images/library.webp",
+        "address": "789 Library Lane, Springfield",
+        "description": "A vast collection of books and resources for all ages.",
+        "link": "https://www.springfieldlibrary.org/"
+    },
+    {
+        "name": "City Zoo",
+        "image": "./images/zoo.webp",
+        "address": "300 Wildlife Ave, Metro City",
+        "description": "Home to exotic animals from around the world.",
+        "link": "https://en.wikipedia.org/wiki/Oklahoma_City_Zoo_and_Botanical_Garden"
+    },
+    {
+        "name": "Art Gallery",
+        "image": "./images/artGallery.webp",
+        "address": "99 Canvas Street, Art District",
+        "description": "Showcasing local and international artists in a modern setting.",
+        "link": "https://www.artdistrictgallery.com/"
+    },
+    {
+        "name": "Science Center",
+        "image": "./images/scienceCenter.webp",
+        "address": "500 Discovery Road, Tech Valley",
+        "description": "Interactive exhibits and hands-on science experiments for all ages.",
+        "link": "https://en.wikipedia.org/wiki/Saint_Louis_Science_Center"
+    }
+]
