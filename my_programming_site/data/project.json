@@ -1,0 +1,17 @@
+{
+    "blog": [
+      {
+        "title": "My First C# Project",
+        "date": "2025-02-01",
+        "content": "I built my first C# console application! It was a simple journaling program.",
+        "image": "/my_programming_site/media/images/csharp.png"
+      },
+      {
+        "title": "Mastering CSS Grid",
+        "date": "2025-02-10",
+        "content": "Today, I finally understood how CSS Grid works!",
+        "image": "/my_programming_site/media/images/cssgrid.png"
+      }
+    ]
+  }
+  
